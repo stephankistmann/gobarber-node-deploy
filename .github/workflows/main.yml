@@ -10,12 +10,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
+      
       - name: Setup Node.js environment
-        uses: actions/setup-node@v.1.4.2
+        uses: actions/setup-node@v1.4.2
         with:
           node-version: 12.x
-      
+        
       # Install NPM/Yarn dependencies
       - name: Install dependencies
         run: yarn
